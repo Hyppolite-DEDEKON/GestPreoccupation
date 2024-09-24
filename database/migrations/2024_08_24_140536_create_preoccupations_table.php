@@ -17,10 +17,9 @@ class CreatePreoccupationsTable extends Migration
             $table->text('description');
             $table->string('preuve')->nullable();  
             $table->enum('priorite', ['basse', 'moyenne', 'haute']);
-            $table->foreignId('gestionnaire_id')->nullable()->constrained('users'); 
-            $table->text('methode_resolution')->nullable();
+            $table->string('gestionnaire_nom')->nullable();            $table->text('methode_resolution')->nullable();
             $table->string('module_concerne');
-            $table->string('progiciel_concerne');
+            $table->string('progiciel_concerne');   
             $table->date('date_debut_traitement')->nullable();
             $table->date('date_fin_traitement')->nullable();
             $table->integer('duree_resolution')->nullable(); 

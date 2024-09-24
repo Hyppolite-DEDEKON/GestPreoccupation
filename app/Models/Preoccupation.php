@@ -11,7 +11,7 @@ class Preoccupation extends Model
 
     protected $fillable = [
         'auteur', 'telephone', 'universite', 'etablissement', 'date_soumission',
-        'description', 'preuve', 'priorite', 'gestionnaire_id', 'methode_resolution',
+        'description', 'preuve', 'priorite', 'gestionnaire_nom', 'methode_resolution',
         'module_concerne', 'progiciel_concerne', 'date_debut_traitement', 'date_fin_traitement',
         'duree_resolution', 'status'
     ];

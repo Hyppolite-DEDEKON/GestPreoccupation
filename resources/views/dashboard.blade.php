@@ -3,19 +3,15 @@
 @section('content')
 
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Acceuil') }}
-        </h2>
-    </x-slot>
+   
     <div class="mt-8">
                         <a href="{{ route('preoccupations.create') }}" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
                             {{ __('Enregistrer une Préoccupation') }}
                         </a>
                     </div>
                     <div class="mt-6">
-        <h2 class="font-semibold text-xl mb-4">Mettre à Jour le Profil Utilisateur</h2>
-        <form action="" method="POST">
+        <!-- <h2 class="font-semibold text-xl mb-4">Mettre à Jour le Profil Utilisateur</h2> -->
+        <!-- <form action="" method="POST">
             @csrf
             <div class="form-group">
                 <label for="nom">Nom</label>
@@ -26,7 +22,7 @@
                 <input type="email" name="email" class="form-control" required>
             </div>
             <button type="submit" class="btn btn-primary">Mettre à Jour</button>
-        </form>
+        </form> -->
     </div>
 <div class="container mx-auto py-12">
     <h1 class="text-2xl font-bold mb-6">Tableau de Bord des Préoccupations</h1>

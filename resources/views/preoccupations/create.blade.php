@@ -41,19 +41,21 @@
             </select>
         </div>
         <div class="form-group">
-            <label for="module_concerne">Module Concerné</label>
-            <input type="text" name="module_concerne" class="form-control" required>
-        </div>
-        <div class="form-group">
             <label for="progiciel_concerne">Progiciel Concerné</label>
             <input type="text" name="progiciel_concerne" class="form-control" required>
         </div>
+        <div class="form-group">
+            <label for="module_concerne">Module Concerné</label>
+            <input type="text" name="module_concerne" class="form-control" required>
+        </div>
+        
         <div class="form-group">
             <label for="preuve">Preuve (Photo/Video)</label>
             <input type="file" name="preuve" class="form-control-file">
         </div>
         <button type="submit" class="btn btn-primary mt-3">Enregistrer</button>
+        <a href="{{ route('preoccupations.index') }}" class="btn btn-secondary mt-3">Retour</a>
     </form>
-    <a href="{{ route('preoccupations.index') }}" class="btn btn-secondary mt-3">Retour</a>
+    
 </div>
 @endsection

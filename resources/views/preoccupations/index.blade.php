@@ -67,7 +67,7 @@
                                 {{ ucfirst($preoccupation->priorite) }}
                             </span>
                         </td>
-                        <td>{{ $preoccupation->gestionnaire_id }}</td>
+                        <td>{{ $preoccupation->gestionnaire_nom }}</td>
                         <td>{{ $preoccupation->methode_resolution }}</td>
                         <td>{{ $preoccupation->module_concerne }}</td>
                         <td>{{ $preoccupation->progiciel_concerne }}</td>
