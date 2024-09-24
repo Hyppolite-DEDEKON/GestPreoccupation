@@ -9,32 +9,32 @@
     <form action="{{ route('preoccupations.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
-            <label for="auteur">Auteur</label>
+            <label for="auteur">Auteur*</label>
             <input type="text" name="auteur" class="form-control" required>
         </div>
         <div class="form-group">
-            <label for="telephone">Téléphone</label>
+            <label for="telephone">Téléphone*</label>
             <input type="text" name="telephone" class="form-control" required>
         </div>
         <div class="form-group">
-            <label for="universite">Université</label>
+            <label for="universite">Université*</label>
             <input type="text" name="universite" class="form-control" required>
         </div>
         <div class="form-group">
-            <label for="etablissement">Etablissement</label>
+            <label for="etablissement">Etablissement*</label>
             <input type="text" name="etablissement" class="form-control" required>
         </div>
         <div class="form-group">
-    <label for="date_soumission">Date de Soumission</label>
+    <label for="date_soumission">Date de Soumission*</label>
     <input type="date" name="date_soumission" class="form-control" value="{{ date('Y-m-d') }}" required>
 </div>
 
         <div class="form-group">
-            <label for="description">Description</label>
+            <label for="description">Description*</label>
             <textarea name="description" class="form-control" required></textarea>
         </div>
         <div class="form-group">
-            <label for="priorite">Priorité</label>
+            <label for="priorite">Priorité*</label>
             <select name="priorite" class="form-control" required>
                 <option value="basse">Basse</option>
                 <option value="moyenne">Moyenne</option>
@@ -42,7 +42,7 @@
             </select>
         </div>
         <div class="form-group">
-    <label for="progiciel_concerne">Progiciel Concerné</label>
+    <label for="progiciel_concerne">Progiciel Concerné*</label>
     <select name="progiciel_concerne" id="progiciel_concerne" class="form-control" required>
         <option value="">Sélectionnez un progiciel</option>
         <option value="SAP">SAP</option>
@@ -55,7 +55,7 @@
 </div>
 
 <div class="form-group">
-    <label for="module_concerne">Module Concerné</label>
+    <label for="module_concerne">Module Concerné*</label>
     <select name="module_concerne" id="module_concerne" class="form-control" required>
         <option value="">Sélectionnez un module</option>
     </select>
@@ -65,7 +65,7 @@
 
         
         <div class="form-group">
-            <label for="preuve">Preuve (Photo/Video)</label>
+            <label for="preuve">Preuve (Photo/Video)*</label>
             <input type="file" name="preuve" class="form-control-file">
         </div>
         <button type="submit" class="btn btn-primary mt-3">Enregistrer</button>

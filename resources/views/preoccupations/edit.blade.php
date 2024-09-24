@@ -9,22 +9,22 @@
         @method('PUT')
 
         <div class="form-group">
-            <label for="auteur">Auteur</label>
+            <label for="auteur">Auteur*</label>
             <input type="text" name="auteur" value="{{ $preoccupation->auteur }}" class="form-control" required>
         </div>
 
         <div class="form-group">
-            <label for="telephone">Téléphone</label>
+            <label for="telephone">Téléphone*</label>
             <input type="text" name="telephone" value="{{ $preoccupation->telephone }}" class="form-control" required>
         </div>
 
         <div class="form-group">
-            <label for="universite">Université</label>
+            <label for="universite">Université*</label>
             <input type="text" name="universite" value="{{ $preoccupation->universite }}" class="form-control" required>
         </div>
 
         <div class="form-group">
-            <label for="etablissement">Etablissement</label>
+            <label for="etablissement">Etablissement*</label>
             <input type="text" name="etablissement" value="{{ $preoccupation->etablissement }}" class="form-control" required>
         </div>
 
@@ -34,12 +34,12 @@
         </div>
 
         <div class="form-group">
-            <label for="description">Description</label>
+            <label for="description">Description*</label>
             <textarea name="description" class="form-control" required>{{ $preoccupation->description }}</textarea>
         </div>
 
         <div class="form-group">
-            <label for="preuve">Preuve</label>
+            <label for="preuve">Preuve*</label>
             <input type="file" name="preuve" class="form-control">
             @if ($preoccupation->preuve)
                 <p>Preuve actuelle : <a href="{{ asset('storage/' . $preoccupation->preuve) }}" target="_blank">Voir</a></p>
@@ -47,7 +47,7 @@
         </div>
 
         <div class="form-group">
-            <label for="priorite">Priorité</label>
+            <label for="priorite">Priorité*</label>
             <select name="priorite" class="form-control" required>
                 <option value="basse" {{ $preoccupation->priorite == 'basse' ? 'selected' : '' }}>Basse</option>
                 <option value="moyenne" {{ $preoccupation->priorite == 'moyenne' ? 'selected' : '' }}>Moyenne</option>
@@ -56,13 +56,13 @@
         </div>
 
         <div class="form-group">
-    <label for="gestionnaire_nom">Gestionnaire</label>
+    <label for="gestionnaire_nom">Gestionnaire*</label>
     <input type="text" id="gestionnaire_nom" name="gestionnaire_nom" value="{{ Auth::user()->name }}" class="form-control" readonly>
 </div>
 
 
 <div class="form-group">
-    <label for="methode_resolution">Méthode de Résolution</label>
+    <label for="methode_resolution">Méthode de Résolution*</label>
     <select name="methode_resolution" class="form-control" required>
         <option value="">Sélectionnez une méthode</option>
         <option value="Résolution Directe" {{ $preoccupation->methode_resolution == 'Résolution Directe' ? 'selected' : '' }}>Résolution Directe</option>
@@ -77,22 +77,22 @@
 
 
         <div class="form-group">
-            <label for="module_concerne">Module Concerné</label>
+            <label for="module_concerne">Module Concerné*</label>
             <input type="text" name="module_concerne" value="{{ $preoccupation->module_concerne }}" class="form-control" required>
         </div>
 
         <div class="form-group">
-            <label for="progiciel_concerne">Progiciel Concerné</label>
+            <label for="progiciel_concerne">Progiciel Concerné*</label>
             <input type="text" name="progiciel_concerne" value="{{ $preoccupation->progiciel_concerne }}" class="form-control" required>
         </div>
 
         <div class="form-group">
-            <label for="date_debut_traitement">Date de Début de Traitement</label>
+            <label for="date_debut_traitement">Date de Début de Traitement*</label>
             <input type="date" id="date_debut_traitement" name="date_debut_traitement" value="{{ $preoccupation->date_debut_traitement }}" class="form-control" required>
         </div>
 
         <div class="form-group">
-            <label for="date_fin_traitement">Date de Fin de Traitement</label>
+            <label for="date_fin_traitement">Date de Fin de Traitement*</label>
             <input type="date" id="date_fin_traitement" name="date_fin_traitement" value="{{ $preoccupation->date_fin_traitement }}" class="form-control">
         </div>
 
@@ -102,7 +102,7 @@
         </div>
 
         <div class="form-group">
-            <label for="status">Statut</label>
+            <label for="status">Statut*</label>
             <select name="status" class="form-control" required>
                 <option value="en cours" {{ $preoccupation->status == 'en cours' ? 'selected' : '' }}>En cours</option>
                 <option value="résolu" {{ $preoccupation->status == 'résolu' ? 'selected' : '' }}>Résolu</option>
