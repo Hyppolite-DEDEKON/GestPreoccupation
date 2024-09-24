@@ -9,7 +9,7 @@
     <!-- Ajout de marge supérieure pour espacer le contenu du titre fixe -->
     <div class="mt-5 pt-5"> 
         <div class="text-end mb-8"> 
-            <a href="{{ route('preoccupations.create') }}" class="btn btn-success">Nouveau +</a>
+            <a href="{{ route('preoccupations.create') }}" class="btn btn-success" >Nouveau +</a>
         </div>
         <div class="text-start mb-8">
             <a href="{{ route('dashboard') }}">Acceuil</a>

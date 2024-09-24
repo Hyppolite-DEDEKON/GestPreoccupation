@@ -5,7 +5,7 @@
 <x-app-layout>
    
     <div class="mt-8">
-                        <a href="{{ route('preoccupations.create') }}" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700">
+                        <a href="{{ route('preoccupations.create') }}" class="inline-flex items-center px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700" >
                             {{ __('Enregistrer une Préoccupation') }}
                         </a>
                     </div>

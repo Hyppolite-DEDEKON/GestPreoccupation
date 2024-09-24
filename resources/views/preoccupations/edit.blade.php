@@ -61,10 +61,20 @@
 </div>
 
 
-        <div class="form-group">
-            <label for="methode_resolution">Méthode de Résolution</label>
-            <input type="text" name="methode_resolution" value="{{ $preoccupation->methode_resolution }}" class="form-control" required>
-        </div>
+<div class="form-group">
+    <label for="methode_resolution">Méthode de Résolution</label>
+    <select name="methode_resolution" class="form-control" required>
+        <option value="">Sélectionnez une méthode</option>
+        <option value="Résolution Directe" {{ $preoccupation->methode_resolution == 'Résolution Directe' ? 'selected' : '' }}>Résolution Directe</option>
+        <option value="Escalade" {{ $preoccupation->methode_resolution == 'Escalade' ? 'selected' : '' }}>Escalade</option>
+        <option value="Analyse et Plan d’Action" {{ $preoccupation->methode_resolution == 'Analyse et Plan d’Action' ? 'selected' : '' }}>Analyse et Plan d’Action</option>
+        <option value="Médiation" {{ $preoccupation->methode_resolution == 'Médiation' ? 'selected' : '' }}>Médiation</option>
+        <option value="Formation et Sensibilisation" {{ $preoccupation->methode_resolution == 'Formation et Sensibilisation' ? 'selected' : '' }}>Formation et Sensibilisation</option>
+        <option value="Documentation et Suivi" {{ $preoccupation->methode_resolution == 'Documentation et Suivi' ? 'selected' : '' }}>Documentation et Suivi</option>
+        <option value="Feedback et Amélioration Continue" {{ $preoccupation->methode_resolution == 'Feedback et Amélioration Continue' ? 'selected' : '' }}>Feedback et Amélioration Continue</option>
+    </select>
+</div>
+
 
         <div class="form-group">
             <label for="module_concerne">Module Concerné</label>

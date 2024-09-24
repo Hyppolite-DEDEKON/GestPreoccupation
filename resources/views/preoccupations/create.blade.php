@@ -25,9 +25,10 @@
             <input type="text" name="etablissement" class="form-control" required>
         </div>
         <div class="form-group">
-            <label for="date_soumission">Date de Soumission</label>
-            <input type="date" name="date_soumission" class="form-control" required>
-        </div>
+    <label for="date_soumission">Date de Soumission</label>
+    <input type="date" name="date_soumission" class="form-control" value="{{ date('Y-m-d') }}" required>
+</div>
+
         <div class="form-group">
             <label for="description">Description</label>
             <textarea name="description" class="form-control" required></textarea>
