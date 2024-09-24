@@ -76,7 +76,7 @@ class PreoccupationController extends Controller
 
     public function update(Request $request, $id)
     {
-        // Validation des données
+        dd($request->all());
         $request->validate([
             'auteur' => 'required|string|max:255',
             'telephone' => 'required|string|max:20',
@@ -102,6 +102,7 @@ class PreoccupationController extends Controller
         if ($request->hasFile('preuve')) {
             $preuvePath = $request->file('preuve')->store('preuves', 'public');
         }
+       
     
         $preoccupation->update([
             'auteur' => $request->auteur,
