@@ -24,23 +24,20 @@
             <button type="submit" class="btn btn-primary">Mettre à Jour</button>
         </form> -->
     </div>
-<div class="container mx-auto py-12">
+<div class="container mx-auto py-1">
     <h1 class="text-2xl font-bold mb-6">Tableau de Bord des Préoccupations</h1>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Total des Préoccupations -->
         <div class="bg-white p-4 rounded-lg shadow">
             <h2 class="font-semibold text-lg">Total des Préoccupations</h2>
             <p class="text-4xl text-blue-600">150</p>
         </div>
 
-        <!-- Total des Préoccupations Résolues -->
         <div class="bg-white p-4 rounded-lg shadow">
             <h2 class="font-semibold text-lg">Total des Préoccupations Résolues</h2>
             <p class="text-4xl text-green-600">100</p>
         </div>
 
-        <!-- Total des Préoccupations Non Résolues -->
         <div class="bg-white p-4 rounded-lg shadow">
             <h2 class="font-semibold text-lg">Total des Préoccupations Non Résolues</h2>
             <p class="text-4xl text-red-600">50</p>
@@ -48,13 +45,47 @@
     </div>
 
     <div class="mt-6">
-        <h2 class="font-semibold text-xl mb-4">Évaluation de la Performance des Gestionnaires</h2>
-        <div class="bg-white p-4 rounded-lg shadow">
-            <p>Gestionnaire 1: 80%</p>
-            <p>Gestionnaire 2: 90%</p>
-            <p>Gestionnaire 3: 75%</p>
+    <h2 class="font-semibold text-xl mb-4">Évaluation de la Performance des Gestionnaires</h2>
+    <div class="bg-white p-4 rounded-lg shadow">
+        <div class="flex items-center mb-4">
+            <img src="../img/avatar.png" alt="Gestionnaire 1" class="w-12 h-12 rounded-full mr-4">
+            <div class="flex-1">
+                <p class="font-semibold">Gestionnaire 1</p>
+                <div class="relative">
+                    <div class="h-2 bg-gray-200 rounded-full">
+                        <div class="h-2 bg-blue-600 rounded-full" style="width: 80%;"></div>
+                    </div>
+                    <span class="absolute right-0 text-sm">80%</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center mb-4">
+            <img src="../img/avatar2.jpeg" alt="Gestionnaire 2" class="w-12 h-12 rounded-full mr-4">
+            <div class="flex-1">
+                <p class="font-semibold">Gestionnaire 2</p>
+                <div class="relative">
+                    <div class="h-2 bg-gray-200 rounded-full">
+                        <div class="h-2 bg-green-600 rounded-full" style="width: 90%;"></div>
+                    </div>
+                    <span class="absolute right-0 text-sm">90%</span>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center mb-4">
+            <img src="{{ asset('img/avatar2.jpeg') }}" alt="Gestionnaire 3" class="w-12 h-12 rounded-full mr-4">
+            <div class="flex-1">
+                <p class="font-semibold">Gestionnaire 3</p>
+                <div class="relative">
+                    <div class="h-2 bg-gray-200 rounded-full">
+                        <div class="h-2 bg-red-600 rounded-full" style="width: 75%;"></div>
+                    </div>
+                    <span class="absolute right-0 text-sm">75%</span>
+                </div>
+            </div>
         </div>
     </div>
+</div>
+
 
     <div class="mt-6">
         <h2 class="font-semibold text-xl mb-4">Graphique de Performance Mensuelle</h2>

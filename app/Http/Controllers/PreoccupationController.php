@@ -10,11 +10,21 @@ class PreoccupationController extends Controller
 {
     public function index()
     {
-        // $preoccupations = Preoccupation::all();
+    
         $preoccupations = Preoccupation::with('gestionnaire')->get();
-
+    
         return view('preoccupations.index', compact('preoccupations'));
     }
+    public function dashboard()
+    {
+        $totalPreoccupations = Preoccupation::count();
+        $preoccupationsResolues = Preoccupation::where('status', 'Résolue')->count();
+        $preoccupationsNonResolues = Preoccupation::where('status', 'Non Résolue')->count();
+        dd($totalPreoccupations);
+        return view('dashboard', compact('totalPreoccupations', 'preoccupationsResolues', 'preoccupationsNonResolues'));
+    }
+    
+
 
     public function create()
     {

@@ -11,6 +11,9 @@
         <div class="text-end mb-8"> 
             <a href="{{ route('preoccupations.create') }}" class="btn btn-success">Nouveau +</a>
         </div>
+        <div class="text-start mb-8">
+            <a href="{{ route('dashboard') }}">Acceuil</a>
+        </div>
 
         @if ($preoccupations->isEmpty())
             <div class="alert alert-warning text-center">
